@@ -1,41 +1,52 @@
-@reyhan6610/ngl
+# <div align='center'>NGL Send Message</div>
+<div align='center'>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=node.js" alt="NGL Library" />
+  <img src="https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=node.js" alt="Node Js" />
   <img src="https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge" alt="Version 1.0.0" />
   <img src="https://img.shields.io/badge/license-GPL_v3-yellow?style=for-the-badge" alt="License GPL v3" />
 </p>
 
-📖 Tentang NGL
+<div align="center">
+![logo](https://example.com/image.jpg)
+</div>
+![logo](https://example.com/image.jpg)
+
+---
+
+📖 About NGL
 
 <div style="background: #f5f5f5; padding: 15px; border-radius: 8px; border-left: 4px solid #007acc;">
-<strong>NGL</strong> (Not Gonna Lie) adalah aplikasi dan layanan anonim untuk mengirimkan pertanyaan atau pesan tanpa menampilkan identitas pengirim. Biasanya digunakan bersama Instagram atau platform sosial lainnya.
+<strong>NGL</strong> is an anonymous messaging app. You share a link often on Instagram or other social platforms and people can send you questions or messages without revealing their identity. Those messages then appear inside the strong>NGL</strong> app for you to read.
 </div>
 
 <br>
 
-Dengan library ini, Anda dapat mengirim pesan anonim ke pengguna NGL melalui program yang Anda buat.
+With this library, you can send anonymous messages to NGL users through programs you create.
 
-🚀 Fitur
+---
 
-· ✅ Mengirim pesan anonim ke akun NGL
-· ✅ Support TypeScript dan CommonJS
-· ✅ Error handling yang baik
-· ✅ Mudah digunakan
+🚀 Features
 
-📦 Instalasi
+· Send anonymous messages to NGL accounts
+· Supports TypeScript and CommonJS
+· Easy to use 
+
+---
+
+📦 How to install
 
 ```bash
 npm install @reyhan6610/ngl
 ```
 
-atau
-
 ```bash
 yarn add @reyhan6610/ngl
 ```
 
-💻 Cara Penggunaan
+---
+
+💻 How To Use
 
 CommonJS
 
@@ -47,9 +58,9 @@ async function sendNGLMessage() {
     const result = await ngl[0].run({
       req: {
         query: {
-          link: "https://ngl.link/crypto92935",
-          text: "Hello!",
-          count: 5
+          link: "https://ngl.link/target", //Your target
+          text: "Hello!", //Message
+          count: 5 //count message send max 1000
         }
       }
     });
@@ -72,9 +83,9 @@ async function testNGL(): Promise<void> {
     const result: ApiResponse = await ngl[0].run({
       req: {
         query: {
-          link: "https://ngl.link/crypto92935",
-          text: "Hello!",
-          count: "5"
+          link: "https://ngl.link/target", //Your target
+          text: "Hello!", //Message
+          count: "5" //count message send max 1000
         }
       }
     });
@@ -94,67 +105,33 @@ async function testNGL(): Promise<void> {
 testNGL();
 ```
 
-⚙️ Parameter
-
-<table style="width:100%; border-collapse: collapse;">
-  <thead>
-    <tr style="background-color: #007acc; color: white;">
-      <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Parameter</th>
-      <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Tipe</th>
-      <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Deskripsi</th>
-      <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Wajib</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><code>link</code></td>
-      <td style="padding: 12px; border: 1px solid #ddd;">string</td>
-      <td style="padding: 12px; border: 1px solid #ddd;">Link NGL target</td>
-      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">✅</td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><code>text</code></td>
-      <td style="padding: 12px; border: 1px solid #ddd;">string</td>
-      <td style="padding: 12px; border: 1px solid #ddd;">Pesan yang akan dikirim</td>
-      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">✅</td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><code>count</code></td>
-      <td style="padding: 12px; border: 1px solid #ddd;">number | string</td>
-      <td style="padding: 12px; border: 1px solid #ddd;">Jumlah pesan yang dikirim</td>
-      <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">✅</td>
-    </tr>
-  </tbody>
-</table>
+---
 
 📋 Response
 
-Library mengembalikan object dengan struktur berikut:
+The library returns an object with the following structure: 
 
-```typescript
-interface ApiResponse {
-  status: boolean;
-  data?: any;
-  error?: string;
+```json
+{
+  status: true,
+  data: {
+    totalAttempts: 5,
+    successful: 5,
+    failed: 0,
+    results: [ [Object], [Object], [Object], [Object], [Object] ],
+    errors: []
+  },
+  timestamp: '2025-11-16T06:45:02.087Z'
 }
 ```
-
-⚠️ Catatan Penting
+⚠️ Disclaimer
 
 <div style="background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107;">
-<strong>Perhatian:</strong> Gunakan library ini dengan bijak dan bertanggung jawab. Penggunaan yang tidak etis atau spam dapat melanggar ketentuan layanan NGL.
-</div>
+<strong>Attention:</strong> Use this library wisely and responsibly. Unethical use or spam may violate NGL’s terms of service.
+</div>🔧 Development
 
-🔧 Development
-
-Ingin berkontribusi? Silakan fork repository ini dan buat pull request!
+Want to contribute? Please fork this repository and create a pull request.
 
 📄 License
 
-MIT License - lihat file LICENSE untuk detail lengkap.
-
----
-
-<div align="center">
-Dibuat dengan ❤️ oleh <a href="https://github.com/reyhan6610">reyhan6610</a>
-</div>
+GPL v3 License – see the LICENSE file for full details.
