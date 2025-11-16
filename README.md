@@ -2,9 +2,9 @@
 
 <div align="center">
 
-https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=instagram
-https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge
-https://img.shields.io/badge/license-MIT-orange?style=for-the-badge
+![NGL Library](https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=instagram)
+![Version](https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-orange?style=for-the-badge)
 
 </div>
 
