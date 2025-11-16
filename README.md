@@ -2,7 +2,7 @@
 <div align='center'>
 
 <div align="center">
-![logo](https://files.catbox.moe/xep84p.jpeg)
+  <img src="https://files.catbox.moe/xep84p.jpeg" width="300">
 </div>
 
 <p align="center">
