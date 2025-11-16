@@ -19,7 +19,6 @@
 <strong>NGL</strong> is an anonymous messaging app. You share a link often on Instagram or other social platforms and people can send you questions or messages without revealing their identity. Those messages then appear inside the strong>NGL</strong> app for you to read.
 </div>
 
-<br>
 
 With this library, you can send anonymous messages to NGL users through programs you create.
 
