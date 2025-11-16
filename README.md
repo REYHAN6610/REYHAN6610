@@ -1,8 +1,7 @@
 @reyhan6610/ngl
 
 <p align="center">
-  <!-- Badge NGL dengan logo custom: ganti data:image/svg… dengan base64 SVG logo NGL kamu -->
-  <img src="https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB…(base64 logo NGL)…" alt="NGL Library" />
+  <img src="https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=node.js" alt="NGL Library" />
   <img src="https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge" alt="Version 1.0.0" />
   <img src="https://img.shields.io/badge/license-GPL_v3-yellow?style=for-the-badge" alt="License GPL v3" />
 </p>
