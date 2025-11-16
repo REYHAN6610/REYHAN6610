@@ -1,16 +1,15 @@
 # <div align='center'>NGL Send Message</div>
 <div align='center'>
 
+<div align="center">
+![logo](https://files.catbox.moe/xep84p.jpeg)
+</div>
+
 <p align="center">
   <img src="https://img.shields.io/badge/NGL-Library-blue?style=for-the-badge&logo=node.js" alt="Node Js" />
   <img src="https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge" alt="Version 1.0.0" />
   <img src="https://img.shields.io/badge/license-GPL_v3-yellow?style=for-the-badge" alt="License GPL v3" />
 </p>
-
-<div align="center">
-![logo](https://example.com/image.jpg)
-</div>
-![logo](https://example.com/image.jpg)
 
 ---
 
